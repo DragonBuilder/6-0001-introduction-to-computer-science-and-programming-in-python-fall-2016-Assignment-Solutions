@@ -382,7 +382,7 @@ def read_trigger_config(filename):
 
         # dynamically create trigger as per the file
         else:
-            # second word is always the Tye of trigger
+            # second word is always the Type of trigger
             trigger_name = cmd[1].strip()
             trigger_obj = None
             if trigger_name == 'TITLE':
