@@ -11,7 +11,7 @@ def testMessage():
     print(message.apply_shift(8))
 
 def testPlaintextMessage():
-    # ptM = PlaintextMessage("Let's surround Dunkirk, end brits", 8)
+    # ptM = PlaintextMessage("I am inevitable, I am Iron man!", 8)
     # print(ptM.get_shift())
     # print(ptM.get_encryption_dict())
     # print(ptM.get_message_text_encrypted())
