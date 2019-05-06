@@ -5,7 +5,7 @@ from ps4a import get_permutations
 import random
 
 def testMessage():
-    message = Message("Let's surround Dunkirk, end brits")
+    message = Message("Winter has come... and gone!")
     print(message.get_message_text())
     print(message.get_valid_words())
     print(message.apply_shift(8))
@@ -20,7 +20,7 @@ def testPlaintextMessage():
     # print(ptM.get_encryption_dict())
     # print(ptM.get_message_text_encrypted())
 
-    ptM = PlaintextMessage("Let's surround Dunkirk, end brits", 0)
+    ptM = PlaintextMessage("Winter has come... and gone!", 0)
     print(ptM.get_shift())
     print(ptM.get_encryption_dict())
     print(ptM.get_message_text_encrypted())
@@ -30,7 +30,7 @@ def testPlaintextMessage():
     print(ptM.get_message_text_encrypted())
 
 def testCiphertextMessage():
-    ctM = CiphertextMessage("Tmb'a aczzwcvl Lcvsqzs, mvl jzqba")
+    ctM = CiphertextMessage("Gsxdob rkc mywo... kxn qyxo")
     print(ctM.decrypt_message())
     
 def testSubMessage():
@@ -48,13 +48,13 @@ if __name__ == '__main__':
     # testMessage()
     # print('-----------------------')
     # testPlaintextMessage()
-    #testCiphertextMessage()
-    #wordlist = load_words(WORDLIST_FILENAME)
+    # testCiphertextMessage()
+    # wordlist = load_words(WORDLIST_FILENAME)
     
-    #encrypted_story = get_story_string()
-    #print(encrypted_story)
-    #story = CiphertextMessage(encrypted_story)
-    #decrypted_story = story.decrypt_message()
-    #print(decrypted_story)
+    # encrypted_story = get_story_string()
+    # print(encrypted_story)
+    # story = CiphertextMessage(encrypted_story)
+    # decrypted_story = story.decrypt_message()
+    # print(decrypted_story)
     
     testSubMessage()
